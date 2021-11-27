@@ -9,4 +9,5 @@ comment2.target=void\ iniciar()
 comment2.text=\r\n\ Descripci\u00F3n\r\n\ \r\n\ @param\r\n\ @return\r\n
 comment3.params=args
 comment3.target=void\ main(java.lang.String[])
+comment3.text=\r\n\ Descripci\u00F3n\r\n\ \r\n\ @param\r\n\ @return\r\n
 numComments=4
