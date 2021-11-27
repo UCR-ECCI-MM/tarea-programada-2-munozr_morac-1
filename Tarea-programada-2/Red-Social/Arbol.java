@@ -59,6 +59,7 @@ public class Arbol
         return resultado;
     }
     
+<<<<<<< HEAD
         public Persona buscarMenor(){
         Persona menor = null;
         
@@ -72,6 +73,8 @@ public class Arbol
     }
     
  
+=======
+>>>>>>> parent of a7a9efa (toString de la clase Arbol)
     
     
     
