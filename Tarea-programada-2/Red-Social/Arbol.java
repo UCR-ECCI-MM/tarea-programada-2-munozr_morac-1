@@ -59,6 +59,17 @@ public class Arbol
         return resultado;
     }
     
+    public Persona buscarMenor(){
+        Persona menor = null;
+        
+        if(raiz.getArbolIzquierdo().getRaiz() == null){
+            menor = raiz.getPersona();
+        }else {
+            menor = raiz.getArbolIzquierdo().buscarMenor();
+        }
+        
+        return  menor;
+    }
     
     
     
@@ -106,17 +117,23 @@ public class Arbol
     }
     
     
-        public String toString(Arbol miArbol){  // Está incompleto. 
-        String mensaje = "";
-        if(raiz != null){
-            //mensaje = mensaje + " \n" + raizArbol.getElemento().getId() ;
-            
-            //mensaje = mensaje + " \n" + this.toString(raizArbol.getIzquierdo());
-
-            //mensaje = mensaje + " \n" + this.toString(raizArbol.getDerecho()) ;
-
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
+    public String toString() {
+        String hilera = "";
+        
+        if (raiz != null) {
+            hilera += raiz.getArbolIzquierdo().toString();
+            hilera += raiz.getPersona().toString() + "\n";
+            hilera += raiz.getArbolDerecho().toString();
         }
         
-        return mensaje;
+        
+        return hilera;
     }
+    
 }
