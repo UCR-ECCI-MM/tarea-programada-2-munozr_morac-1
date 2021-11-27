@@ -14,7 +14,6 @@ comment4.params=
 comment4.target=boolean\ estarVacio()
 comment5.params=
 comment5.target=boolean\ serHoja()
-<<<<<<< HEAD
 comment6.params=
 comment6.target=Persona\ buscarMenor()
 comment7.params=nombre
@@ -25,13 +24,3 @@ comment8.target=boolean\ agregarAmigo(Persona)
 comment9.params=miArbol
 comment9.target=java.lang.String\ toString(Arbol)
 numComments=10
-=======
-comment6.params=nombre
-comment6.target=boolean\ verificarExistencia(java.lang.String)
-comment6.text=\r\n\ Verifica\ si\ el\ nombre\ digitado\ por\ el\ usuario\ se\ encuentra\ dentro\ de\ la\ lista.\r\n\ \r\n\ @param\ nombre\ Nombre\ de\ la\ persona\ a\ buscar\ en\ la\ lista\ que\ digita\ el\ usuario.\r\n\ @return\ true\ si\ el\ nombre\ digitado\ se\ encuentra\ dentro\ de\ la\ lista\ o\ false\ en\ caso\ contrario.\r\n
-comment7.params=nuevoAmigo
-comment7.target=boolean\ agregarAmigo(Persona)
-comment8.params=miArbol
-comment8.target=java.lang.String\ toString(Arbol)
-numComments=9
->>>>>>> parent of a7a9efa (toString de la clase Arbol)
