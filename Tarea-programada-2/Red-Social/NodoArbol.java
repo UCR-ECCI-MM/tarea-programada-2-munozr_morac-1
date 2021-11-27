@@ -1,21 +1,23 @@
 
 /**
- * Write a description of class Nodo here.
+ * Write a description of class NodoArbol here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Nodo
+public class NodoArbol
 {
     private Persona persona;
-    private Nodo siguiente;
-    private Nodo anterior;
+    private Arbol arbolIzquierdo;
+    private Arbol arbolDerecho;
     
     /**
-     * Constructor de la clase Nodo.
+     * Constructor de la clase NodoArbol.
      */
-    public Nodo(Persona persona) {
+    public NodoArbol(Persona persona) {
         this.persona = persona;
+        this.arbolIzquierdo = new Arbol();
+        this.arbolDerecho = new Arbol();
     }
     
     /**
@@ -44,8 +46,8 @@ public class Nodo
      * @param
      * @return
      */
-    public Nodo getSiguiente() {
-        return siguiente;
+    public Arbol getArbolIzquierdo() {
+        return arbolIzquierdo;
     }
     
     /**
@@ -54,8 +56,8 @@ public class Nodo
      * @param
      * @return
      */
-    public void setSiguiente(Nodo siguiente) {
-        this.siguiente = siguiente;
+    public void setArbolIzquierdo(Arbol arbolIzquierdo) {
+        this.arbolIzquierdo = arbolIzquierdo;
     }
     
     /**
@@ -64,8 +66,8 @@ public class Nodo
      * @param
      * @return
      */
-    public Nodo getAnterior() {
-        return anterior;
+    public Arbol getArbolDerecho() {
+        return arbolDerecho;
     }
     
     /**
@@ -74,17 +76,7 @@ public class Nodo
      * @param
      * @return
      */
-    public void setAnterior(Nodo anterior) {
-        this.anterior = anterior;
-    }
-    
-    /**
-     * Descripción
-     * 
-     * @param
-     * @return
-     */
-    public String toString() {
-        return persona.toString();
+    public void setArbolDerecho(Arbol arbolDerecho) {
+        this.arbolDerecho = arbolDerecho;
     }
 }

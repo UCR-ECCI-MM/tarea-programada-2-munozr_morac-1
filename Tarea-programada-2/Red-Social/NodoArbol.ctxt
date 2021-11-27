@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=NodoArbol
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ NodoArbol\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=persona
+comment1.target=NodoArbol(Persona)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ NodoArbol.\r\n
+comment2.params=
+comment2.target=Persona\ getPersona()
+comment2.text=\r\n\ Descripci\u00F3n\r\n\ \r\n\ @param\r\n\ @return\r\n
+comment3.params=persona
+comment3.target=void\ setPersona(Persona)
+comment3.text=\r\n\ Descripci\u00F3n\r\n\ \r\n\ @param\r\n\ @return\r\n
+comment4.params=
+comment4.target=Arbol\ getArbolIzquierdo()
+comment4.text=\r\n\ Descripci\u00F3n\r\n\ \r\n\ @param\r\n\ @return\r\n
+comment5.params=arbolIzquierdo
+comment5.target=void\ setArbolIzquierdo(Arbol)
+comment5.text=\r\n\ Descripci\u00F3n\r\n\ \r\n\ @param\r\n\ @return\r\n
+comment6.params=
+comment6.target=Arbol\ getArbolDerecho()
+comment6.text=\r\n\ Descripci\u00F3n\r\n\ \r\n\ @param\r\n\ @return\r\n
+comment7.params=arbolDerecho
+comment7.target=void\ setArbolDerecho(Arbol)
+comment7.text=\r\n\ Descripci\u00F3n\r\n\ \r\n\ @param\r\n\ @return\r\n
+numComments=8
