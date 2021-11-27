@@ -59,6 +59,9 @@ public class Arbol
         return resultado;
     }
     
+    
+    
+    
     /**
      * Verifica si el nombre digitado por el usuario se encuentra dentro de la lista.
      * 
@@ -100,5 +103,20 @@ public class Arbol
         }
         
         return agregado;
+    }
+    
+    
+        public String toString(Arbol miArbol){  // Está incompleto. 
+        String mensaje = "";
+        if(raiz != null){
+            //mensaje = mensaje + " \n" + raizArbol.getElemento().getId() ;
+            
+            //mensaje = mensaje + " \n" + this.toString(raizArbol.getIzquierdo());
+
+            //mensaje = mensaje + " \n" + this.toString(raizArbol.getDerecho()) ;
+
+        }
+        
+        return mensaje;
     }
 }
