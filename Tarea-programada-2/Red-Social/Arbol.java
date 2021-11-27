@@ -36,7 +36,27 @@ public class Arbol
      * @return
      */
     public void setRaiz(NodoArbol raiz) {
-        this.raiz = raiz;
+        raiz = raiz;
+    }
+    
+    public boolean estarVacio() 
+    {
+        boolean vacio = false;
+        if (raiz == null) {
+            vacio = true;
+        }
+
+        return vacio;
+    }
+    
+    public boolean serHoja() {
+        boolean resultado = true;
+        if(raiz != null) {
+            if(raiz.getArbolDerecho() != null || raiz.getArbolIzquierdo() != null){
+                resultado = false;
+            }
+        }
+        return resultado;
     }
     
     /**
