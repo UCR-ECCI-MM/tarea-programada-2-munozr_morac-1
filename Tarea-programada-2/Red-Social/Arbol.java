@@ -59,6 +59,19 @@ public class Arbol
         return resultado;
     }
     
+        public Persona buscarMenor(){
+        Persona menor = null;
+        
+        if(raiz.getArbolIzquierdo().getRaiz() == null){
+            menor = raiz.getPersona();
+        }else {
+            menor = raiz.getArbolIzquierdo().buscarMenor();
+        }
+        
+        return  menor;
+    }
+    
+ 
     
     
     
