@@ -58,7 +58,30 @@ public class Arbol
         }
         return resultado;
     }
+    
+    public Persona buscarMenor(){
+        Persona menor = null;
         
+        if(raiz.getArbolIzquierdo().getRaiz() == null){
+            menor = raiz.getPersona();
+        }else {
+            menor = raiz.getArbolIzquierdo().buscarMenor();
+        }
+        
+        return  menor;
+    }
+    
+    public Persona buscarMayor(){
+        Persona mayor = null;
+        if(raiz.getArbolDerecho().getRaiz() == null){
+            mayor = raiz.getPersona();
+        }else {
+            mayor = raiz.getArbolDerecho().buscarMayor();
+        }
+        
+        return mayor;
+    }
+    
     /**
      * Verifica si el nombre digitado por el usuario se encuentra dentro de la lista.
      * 
@@ -102,6 +125,7 @@ public class Arbol
         return agregado;
     }
     
+    
     /**
      * Descripción
      * 
@@ -117,6 +141,8 @@ public class Arbol
             hilera += raiz.getArbolDerecho().toString();
         }
         
+        
         return hilera;
     }
+    
 }
