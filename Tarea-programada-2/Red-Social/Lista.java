@@ -7,8 +7,8 @@
  */
 public class Lista
 {
-    private Nodo primero;
-    private Nodo ultimo;
+    private NodoLista primero;
+    private NodoLista ultimo;
     
     /**
      * Constructor de la clase Lista
@@ -24,7 +24,7 @@ public class Lista
      * @param
      * @return
      */
-    public Nodo getPrimero() {
+    public NodoLista getPrimero() {
         return primero;
     }
     
@@ -34,7 +34,7 @@ public class Lista
      * @param
      * @return
      */
-    public void setPrimero(Nodo primero) {
+    public void setPrimero(NodoLista primero) {
         this.primero = primero;
     }
     
@@ -44,7 +44,7 @@ public class Lista
      * @param
      * @return
      */
-    public Nodo getUltimo() {
+    public NodoLista getUltimo() {
         return ultimo;
     }
     
@@ -54,7 +54,7 @@ public class Lista
      * @param
      * @return
      */
-    public void setUltimo(Nodo ultimo) {
+    public void setUltimo(NodoLista ultimo) {
         this.ultimo = ultimo;
     }
     
@@ -65,7 +65,7 @@ public class Lista
      * @return true si el nombre digitado se encuentra dentro de la lista o false en caso contrario.
      */
     public boolean verificarExistencia(String nombre) {
-        Nodo nodoAuxiliar = primero;
+        NodoLista nodoAuxiliar = primero;
         boolean existe = false;
         
         while (nodoAuxiliar != null) {
@@ -89,7 +89,7 @@ public class Lista
         
         if (verificarExistencia(nuevaPersona.getNombre()) == false) {
             agregado = true;
-            Nodo nodoNuevo = new Nodo(nuevaPersona);
+            NodoLista nodoNuevo = new NodoLista(nuevaPersona);
         
             if (primero == null) {
                 primero = nodoNuevo;
@@ -105,7 +105,7 @@ public class Lista
                         nodoNuevo.setAnterior(ultimo);
                         ultimo = nodoNuevo;
                     } else {
-                        Nodo nodoAuxiliar = primero;
+                        NodoLista nodoAuxiliar = primero;
                 
                         while (nodoAuxiliar != ultimo) {
                             if (nodoAuxiliar.getPersona().getNombre().compareTo(nodoNuevo.getPersona().getNombre()) < 0 
@@ -148,7 +148,7 @@ public class Lista
                     ultimo = ultimo.getAnterior();
                     ultimo.setSiguiente(null);
                 } else {
-                    Nodo nodoAuxiliar = primero.getSiguiente();
+                    NodoLista nodoAuxiliar = primero.getSiguiente();
                 
                     while (nodoAuxiliar != ultimo && encontrado != true) {
                         if (nodoAuxiliar.getPersona().getNombre().equals(nombre)) {
@@ -168,6 +168,8 @@ public class Lista
         }
         
         return eliminado;
+        
+        //Falta eliminar el árbol de amigos
     }
     
     /**
@@ -176,7 +178,7 @@ public class Lista
      * @return una hilera que contenga a todas las personas en la lista con sus respectivos datos.
      */
     public String toString() {
-        Nodo nodoAuxiliar = primero;
+        NodoLista nodoAuxiliar = primero;
         String hilera = "";
         
         while (nodoAuxiliar != null) {
