@@ -18,18 +18,42 @@ public class Lista
         ultimo = null;
     }
     
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public Nodo getPrimero() {
         return primero;
     }
     
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public void setPrimero(Nodo primero) {
         this.primero = primero;
     }
     
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public Nodo getUltimo() {
         return ultimo;
     }
     
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public void setUltimo(Nodo ultimo) {
         this.ultimo = ultimo;
     }
@@ -147,7 +171,9 @@ public class Lista
     }
     
     /**
-     * toString de la clase Lista
+     * toString de la clase Lista.
+     * 
+     * @return una hilera que contenga a todas las personas en la lista con sus respectivos datos.
      */
     public String toString() {
         Nodo nodoAuxiliar = primero;

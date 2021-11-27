@@ -38,6 +38,12 @@ public class Controlador
         System.out.print(lista);
     }
     
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public static void main(String[] args) {
         Controlador controlador = new Controlador();
         controlador.iniciar();

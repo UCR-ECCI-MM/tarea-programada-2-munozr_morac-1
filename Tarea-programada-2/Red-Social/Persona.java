@@ -20,30 +20,72 @@ public class Persona
         this.mes = mes;
     }
     
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public String getNombre() {
         return nombre;
     }
     
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
     
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public int getDia() {
         return dia;
     }
     
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public void setDia(int dia) {
         this.dia = dia;
     }
     
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public int getMes() {
         return mes;
     }
     
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public void setMes(int mes) {
         this.mes = mes;
     }
     
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public String toString() {
         return nombre + ", " + dia + "/" + mes;
     }
