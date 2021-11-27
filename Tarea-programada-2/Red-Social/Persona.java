@@ -10,6 +10,7 @@ public class Persona
     private String nombre;
     private int dia;
     private int mes;
+    private Arbol arbolAmigos;
     
     /**
      * Constructor de la clase Persona.
@@ -18,6 +19,7 @@ public class Persona
         this.nombre = nombre;
         this.dia = dia;
         this.mes = mes;
+        this.arbolAmigos = new Arbol();
     }
     
     /**
@@ -86,7 +88,31 @@ public class Persona
      * @param
      * @return
      */
+    public Arbol getArbolAmigos() {
+        return arbolAmigos;
+    }
+    
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
+    public void setArbolAmigos(Arbol arbolAmigos) {
+        this.arbolAmigos = arbolAmigos;
+    }
+    
+    public boolean agregarAmigo(Persona nuevoAmigo) {
+        return arbolAmigos.agregarAmigo(nuevoAmigo);
+    }
+    
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public String toString() {
-        return nombre + ", " + dia + "/" + mes;
+        return nombre + ", " + dia + "/" + mes + "\n  Amigos:\n" + arbolAmigos.toString();
     }
 }

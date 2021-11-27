@@ -68,10 +68,11 @@ public class Lista
         NodoLista nodoAuxiliar = primero;
         boolean existe = false;
         
-        while (nodoAuxiliar != null) {
+        while (nodoAuxiliar != null && existe == false) {
             if (nombre.compareTo(nodoAuxiliar.getPersona().getNombre()) == 0) {
                 existe = true;
-                nodoAuxiliar = null;
+            } else {
+                nodoAuxiliar = nodoAuxiliar.getSiguiente();
             }
         }
         
@@ -86,6 +87,7 @@ public class Lista
      */
     public boolean agregarPersona(Persona nuevaPersona) {
         boolean agregado = false;
+        boolean encontrado = false;
         
         if (verificarExistencia(nuevaPersona.getNombre()) == false) {
             agregado = true;
@@ -107,14 +109,14 @@ public class Lista
                     } else {
                         NodoLista nodoAuxiliar = primero;
                 
-                        while (nodoAuxiliar != ultimo) {
+                        while (nodoAuxiliar != ultimo && encontrado == false) {
                             if (nodoAuxiliar.getPersona().getNombre().compareTo(nodoNuevo.getPersona().getNombre()) < 0 
                             && nodoNuevo.getPersona().getNombre().compareTo(nodoAuxiliar.getSiguiente().getPersona().getNombre()) < 0) {
                                 nodoNuevo.setAnterior(nodoAuxiliar);
                                 nodoNuevo.setSiguiente(nodoAuxiliar.getSiguiente());
                                 nodoAuxiliar.setSiguiente(nodoNuevo);
                                 nodoAuxiliar.getSiguiente().setAnterior(nodoNuevo);
-                                nodoAuxiliar = ultimo;
+                                encontrado = true;
                             } else {
                                 nodoAuxiliar = nodoAuxiliar.getSiguiente();
                             }
@@ -150,7 +152,7 @@ public class Lista
                 } else {
                     NodoLista nodoAuxiliar = primero.getSiguiente();
                 
-                    while (nodoAuxiliar != ultimo && encontrado != true) {
+                    while (nodoAuxiliar != ultimo && encontrado == false) {
                         if (nodoAuxiliar.getPersona().getNombre().equals(nombre)) {
                             nodoAuxiliar.getAnterior().setSiguiente(nodoAuxiliar.getSiguiente());
                             nodoAuxiliar.getSiguiente().setAnterior(nodoAuxiliar.getAnterior());

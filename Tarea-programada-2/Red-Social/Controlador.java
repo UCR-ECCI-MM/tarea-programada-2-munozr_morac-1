@@ -35,6 +35,10 @@ public class Controlador
         lista.agregarPersona(p3);
         lista.agregarPersona(p4);
         lista.agregarPersona(p5);
+        p1.agregarAmigo(p2);
+        p1.agregarAmigo(p3);
+        p1.agregarAmigo(p4);
+        p1.agregarAmigo(p5);
         System.out.print(lista);
     }
     

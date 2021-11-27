@@ -36,7 +36,7 @@ public class Arbol
      * @return
      */
     public void setRaiz(NodoArbol raiz) {
-        raiz = raiz;
+        this.raiz = raiz;
     }
     
     public boolean estarVacio() 
@@ -113,7 +113,7 @@ public class Arbol
         
         if (raiz != null) {
             hilera += raiz.getArbolIzquierdo().toString();
-            hilera += raiz.getPersona().toString() + "\n";
+            hilera += "    " + raiz.getPersona().getNombre() + "\n";
             hilera += raiz.getArbolDerecho().toString();
         }
         
