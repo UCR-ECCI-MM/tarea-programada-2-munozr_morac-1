@@ -10,11 +10,20 @@ public class Controlador
     private JOptionPane interfaz;
     private Lista lista;
     
+    /**
+     * Constructor de la clase Controlador.
+     */
     public Controlador() {
         interfaz = new JOptionPane();
         lista = new Lista();
     }
 
+    /**
+     * Descripción
+     * 
+     * @param
+     * @return
+     */
     public void iniciar() {
         Persona p1 = new Persona("xa", 17, 05);
         Persona p2 = new Persona("lm", 17, 05);

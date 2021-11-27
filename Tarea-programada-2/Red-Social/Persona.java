@@ -11,6 +11,9 @@ public class Persona
     private int dia;
     private int mes;
     
+    /**
+     * Constructor de la clase Persona.
+     */
     public Persona(String nombre, int dia, int mes) {
         this.nombre = nombre;
         this.dia = dia;

@@ -3,6 +3,7 @@ comment0.target=Persona
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Usuario\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=nombre\ dia\ mes
 comment1.target=Persona(java.lang.String,\ int,\ int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Persona.\r\n
 comment2.params=
 comment2.target=java.lang.String\ getNombre()
 comment3.params=nombre

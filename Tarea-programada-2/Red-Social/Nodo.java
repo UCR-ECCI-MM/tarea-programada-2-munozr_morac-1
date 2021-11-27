@@ -11,6 +11,9 @@ public class Nodo
     private Nodo siguiente;
     private Nodo anterior;
     
+    /**
+     * Constructor de la clase Nodo.
+     */
     public Nodo(Persona persona) {
         this.persona = persona;
     }

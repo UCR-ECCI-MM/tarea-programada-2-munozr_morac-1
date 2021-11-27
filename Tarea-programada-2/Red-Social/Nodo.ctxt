@@ -3,6 +3,7 @@ comment0.target=Nodo
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Nodo\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=persona
 comment1.target=Nodo(Persona)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Nodo.\r\n
 comment2.params=
 comment2.target=Persona\ getPersona()
 comment3.params=persona
