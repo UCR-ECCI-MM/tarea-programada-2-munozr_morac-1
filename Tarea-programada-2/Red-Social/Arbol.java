@@ -125,7 +125,6 @@ public class Arbol
         return agregado;
     }
     
-    
     /**
      * Descripción
      * 
@@ -140,7 +139,6 @@ public class Arbol
             hilera += "    " + raiz.getPersona().getNombre() + "\n";
             hilera += raiz.getArbolDerecho().toString();
         }
-        
         
         return hilera;
     }
