@@ -143,4 +143,36 @@ public class Arbol
         return hilera;
     }
     
+        public boolean eliminar(String personaEliminar){
+        boolean eliminado = false;
+        if (this.estarVacio() != true){
+            if(this.serHoja() == true && personaEliminar.equals(raiz.getPersona().getNombre())){
+                this.setRaiz(null);
+                eliminado = true;
+            } else {
+                if(this.serHoja() == false && personaEliminar.equals(raiz.getPersona().getNombre())){
+                    Persona personaSustituta = null; 
+                    if(raiz.estarVacioIzquierdo() == false) {
+                        personaSustituta = raiz.getArbolIzquierdo().buscarMayor();
+                        raiz.setPersona(personaSustituta);
+                        raiz.getArbolIzquierdo().eliminar(personaSustituta.getNombre());
+                        eliminado = true;
+                    } else {
+                        personaSustituta = raiz.getArbolDerecho().buscarMenor();
+                        raiz.setPersona(personaSustituta);
+                        raiz.getArbolDerecho().eliminar(personaSustituta.getNombre());
+                        eliminado = true;
+                    }
+                } else {
+                    if (personaEliminar.compareToIgnoreCase(raiz.getPersona().getNombre()) <= 0) {
+                        eliminado = raiz.getArbolIzquierdo().eliminar(personaEliminar);
+                    } else {
+                        eliminado = raiz.getArbolDerecho().eliminar(personaEliminar); 
+                    }
+                }
+            }
+        }
+        
+        return eliminado;
+    }
 }
