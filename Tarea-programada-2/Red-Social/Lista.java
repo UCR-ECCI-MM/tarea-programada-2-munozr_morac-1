@@ -64,19 +64,19 @@ public class Lista
      * @param nombre Nombre de la persona a buscar en la lista que digita el usuario.
      * @return true si el nombre digitado se encuentra dentro de la lista o false en caso contrario.
      */
-    public boolean verificarExistencia(String nombre) {
+    public Persona buscarPersona(String nombre) {
         NodoLista nodoAuxiliar = primero;
-        boolean existe = false;
+        Persona personaEncontrada = null;
         
-        while (nodoAuxiliar != null && existe == false) {
+        while (nodoAuxiliar != null && personaEncontrada == null) {
             if (nombre.compareTo(nodoAuxiliar.getPersona().getNombre()) == 0) {
-                existe = true;
+                personaEncontrada = nodoAuxiliar.getPersona();
             } else {
                 nodoAuxiliar = nodoAuxiliar.getSiguiente();
             }
         }
         
-        return existe;
+        return personaEncontrada;
     }
     
     /**
@@ -89,7 +89,7 @@ public class Lista
         boolean agregado = false;
         boolean encontrado = false;
         
-        if (verificarExistencia(nuevaPersona.getNombre()) == false) {
+        if (buscarPersona(nuevaPersona.getNombre()) == null) {
             agregado = true;
             NodoLista nodoNuevo = new NodoLista(nuevaPersona);
         
