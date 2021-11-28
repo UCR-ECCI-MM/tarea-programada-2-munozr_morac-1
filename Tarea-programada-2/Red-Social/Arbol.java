@@ -52,7 +52,7 @@ public class Arbol
     public boolean serHoja() {
         boolean resultado = true;
         if(raiz != null) {
-            if(raiz.getArbolDerecho() != null || raiz.getArbolIzquierdo() != null){
+            if(raiz.getArbolDerecho().estarVacio() == false || raiz.getArbolIzquierdo().estarVacio() == false ){
                 resultado = false;
             }
         }
