@@ -20,6 +20,25 @@ public class NodoArbol
         this.arbolDerecho = new Arbol();
     }
     
+        public boolean estarVacioIzquierdo(){
+        boolean vacio = true;
+        if(this.getArbolIzquierdo().getRaiz() != null){
+            vacio = false;
+        }
+        
+        return vacio;
+    }
+    
+    public boolean estarVacioDerecho(){
+        boolean vacio = true;
+        if(this.getArbolDerecho().getRaiz() != null){
+            vacio = false;
+        }
+        
+        return vacio;
+    }
+    
+    
     /**
      * Descripción
      * 
