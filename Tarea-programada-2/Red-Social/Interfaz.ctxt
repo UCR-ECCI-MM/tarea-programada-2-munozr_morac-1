@@ -1,4 +1,19 @@
 #BlueJ class context
 comment0.target=Interfaz
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Interfaz\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-numComments=1
+comment1.params=elTitulo
+comment1.target=Interfaz(java.lang.String)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ Interfaz.\ \r\n
+comment2.params=mensaje
+comment2.target=java.lang.String\ pedirHilera(java.lang.String)
+comment2.text=\ \ \r\n\ Le\ pide\ al\ usuario\ una\ hilera\ y\ la\ retorna.\r\n\ \r\n\ @param\ \ mensaje\ el\ mensaje\ que\ se\ le\ desea\ mostrar\ al\ usuario.\r\n\ @return\ la\ hilera\ introducida\ por\ el\ usuario.\ \r\n
+comment3.params=mensaje
+comment3.target=int\ pedirNumeroEntero(java.lang.String)
+comment3.text=\r\n\ Solicita\ un\ n\u00FAmero\ entero\ al\ usuario.\ \ \r\n\ \u0000\r\n\ @param\ mensaje\ el\ mensaje\ que\ se\ le\ desea\ mostrar\ al\ usuario.\r\n\ @return\ el\ n\u00FAmero\ digitado\ por\ el\ usuario.\r\n
+comment4.params=mensaje
+comment4.target=void\ mostrarMensaje(java.lang.String)
+comment4.text=\r\n\ Muestra\ un\ mensaje\ al\ usuario.\ \ \r\n\ \u0000\r\n\ @param\ mensaje\ el\ mensaje\ que\ se\ le\ desea\ mostrar\ al\ usuario.\r\n
+comment5.params=opciones\ mensaje
+comment5.target=int\ pedirOpcion(java.lang.String[],\ java.lang.String)
+comment5.text=\r\n\ Le\ permite\ al\ usuario\ escoger\ entre\ varias\ opciones\ y\ retorna\ la\ opci\u00F3n\ escogida.\ \ \r\n\ \u0000\r\n\ @param\ opciones\ arreglo\ que\ contiene\ las\ opciones\ que\ se\ le\ va\ a\ mostrar\ al\ usuario.\ \ \ \ \u0000\r\n\ @param\ mensaje\ el\ mensaje\ que\ se\ le\ desea\ mostrar\ al\ usuario.\r\n\ @return\ la\ opci\u00F3n\ escogida\ por\ el\ usuario.\r\n
+numComments=6
