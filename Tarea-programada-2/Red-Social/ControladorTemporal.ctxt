@@ -25,5 +25,5 @@ comment7.target=void\ mostrarListaAmigos()
 comment8.params=
 comment8.target=void\ mostrarCumpleanosCercano()
 comment9.params=
-comment9.target=void\ abrirArchivo()
+comment9.target=void\ abrirBaseDatos()
 numComments=12
