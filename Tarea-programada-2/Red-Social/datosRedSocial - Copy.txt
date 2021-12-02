@@ -1,13 +1,13 @@
-Ana Castro
-3
-12
-Juan Rivera
-fin
 Juan Rivera
 24
 4
 Ana Castro
 Pablo Bosco
+fin
+Ana Castro
+3
+12
+Juan Rivera
 fin
 Pablo Bosco
 16

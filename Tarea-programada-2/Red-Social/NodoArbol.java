@@ -38,7 +38,6 @@ public class NodoArbol
         return vacio;
     }
     
-    
     /**
      * Descripción
      * 

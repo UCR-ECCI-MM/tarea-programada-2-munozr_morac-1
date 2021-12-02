@@ -190,4 +190,16 @@ public class Lista
         
         return hilera;
     }
+    
+    public String toStringArchivo() {
+        NodoLista nodoAuxiliar = primero;
+        String hilera = "";
+        
+        while (nodoAuxiliar != null) {
+            hilera += nodoAuxiliar.getPersona().toStringArchivo() + "\n";
+            nodoAuxiliar = nodoAuxiliar.getSiguiente();
+        }
+        
+        return hilera;
+    }
 }
