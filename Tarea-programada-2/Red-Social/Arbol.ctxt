@@ -35,5 +35,5 @@ comment8.params=nombre
 comment8.target=boolean\ verificarExistencia(java.lang.String)
 comment8.text=\r\n\ Verifica\ si\ el\ nombre\ digitado\ por\ el\ usuario\ se\ encuentra\ dentro\ de\ la\ lista.\r\n\ \r\n\ @param\ nombre\ Nombre\ de\ la\ persona\ a\ buscar\ en\ la\ lista\ que\ digita\ el\ usuario.\r\n\ @return\ true\ si\ el\ nombre\ digitado\ se\ encuentra\ dentro\ de\ la\ lista\ o\ false\ en\ caso\ contrario.\r\n
 comment9.params=nuevoAmigo
-comment9.target=boolean\ agregarAmigo(Persona)
+comment9.target=void\ agregarAmigo(Persona)
 numComments=16
