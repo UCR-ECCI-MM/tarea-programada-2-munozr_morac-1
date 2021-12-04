@@ -1,7 +1,6 @@
 Ana Castro
 3
 12
-Juan Rivera
 fin
 Juan Rivera
 24
@@ -9,9 +8,10 @@ Juan Rivera
 Ana Castro
 Pablo Bosco
 fin
-Maria
+AnaCastro
+3
 12
-14
+Juan Rivera
 fin
 Pablo Bosco
 16

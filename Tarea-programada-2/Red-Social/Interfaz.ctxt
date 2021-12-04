@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Interfaz
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Interfaz\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Esta\ clase\ se\ encarga\ de\ mostrar\ mensajes,\ pedir\ datos\ e\ interactuar\ con\ el\ usuario.\r\n\r\n\ @author\ Kyara\ Vannesa\ Mu\u00F1oz\ Ram\u00EDrez\ (C15380)\r\n\ @author\ Jose\ Pablo\ Mora\ Cubillo\ (B75044)\r\n
 comment1.params=elTitulo
 comment1.target=Interfaz(java.lang.String)
 comment1.text=\r\n\ Constructor\ de\ la\ clase\ Interfaz.\ \r\n

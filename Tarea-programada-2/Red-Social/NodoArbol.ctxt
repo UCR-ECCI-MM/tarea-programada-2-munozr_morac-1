@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=NodoArbol
-comment0.text=\r\n\ Esta\ clase\ representa\ una\ persona.\ \r\n\ \r\n\ @author\ Kyara\ Vannesa\ Mu\u00F1oz\ Ram\u00EDrez\ (C15380)\r\n\ @author\ Jose\ Pablo\ Mora\ Cubillo\ (B75044)\r\n
+comment0.text=\r\n\ Esta\ clase\ representa\ un\ nodo\ del\ \u00E1rbol.\ \r\n\ \r\n\ @author\ Kyara\ Vannesa\ Mu\u00F1oz\ Ram\u00EDrez\ (C15380)\r\n\ @author\ Jose\ Pablo\ Mora\ Cubillo\ (B75044)\r\n
 comment1.params=persona
 comment1.target=NodoArbol(Persona)
 comment1.text=\r\n\ Constructor\ de\ la\ clase\ NodoArbol.\r\n
@@ -9,7 +9,7 @@ comment2.target=boolean\ estarVacioIzquierdo()
 comment2.text=\r\n\ Determina\ si\ el\ \u00E1rbol\ izquierdo\ est\u00E1\ vac\u00EDo.\ \ \ \r\n\ \u0000\r\n\ @return\ True\ si\ el\ \u00E1rbol\ izquierdo\ est\u00E1\ vac\u00EDo\ o\ false\ en\ caso\ contrario.\ \r\n
 comment3.params=
 comment3.target=boolean\ estarVacioDerecho()
-comment3.text=\r\n\ Determina\ si\ el\ \u00E1rbol\ derecho\ est\u00E1\ vac\u00EDo.\ \ \r\n\ \u0000\r\n\ @return\ True\ si\ el\ \u00E1rbol\ derecho\ est\u00E1\ vac\u00EDo\ o\ false\ en\ caso\ contrario.\ \r\n
+comment3.text=\r\n\ Determina\ si\ el\ \u00E1rbol\ derecho\ est\u00E1\ vac\u00EDo.\r\n\ \u0000\r\n\ @return\ True\ si\ el\ \u00E1rbol\ derecho\ est\u00E1\ vac\u00EDo\ o\ false\ en\ caso\ contrario.\ \r\n
 comment4.params=
 comment4.target=Persona\ getPersona()
 comment4.text=\r\n\ Retorna\ la\ persona\ asociada\ al\ nodo\ del\ \u00E1rbol.\ \r\n\r\n\ @return\ Persona\ asociada\ al\ nodo.\ \r\n
