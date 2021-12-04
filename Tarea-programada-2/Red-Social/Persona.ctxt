@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Persona
-comment0.text=\r\n\ Esta\ clase\ representa\ una\ persona.\ \r\n\ \r\n\ @author\ Kyara\ Mu\u00F1oz\r\n\ @author\ Pablo\ Mora\r\n
+comment0.text=\r\n\ Esta\ clase\ representa\ una\ persona.\ \r\n\ \r\n\ @author\ Kyara\ Vannesa\ Mu\u00F1oz\ Ram\u00EDrez\ (C15380)\r\n\ @author\ Jose\ Pablo\ Mora\ Cubillo\ (B75044)\r\n
 comment1.params=nombre\ dia\ mes
 comment1.target=Persona(java.lang.String,\ int,\ int)
 comment1.text=\r\n\ Constructor\ de\ la\ clase\ Persona.\r\n
