@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Lista here.
+ * Esta clase representa la lista doblemente enlazada con los nodos que contienen a las personas.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Kyara Vannesa Muñoz Ramírez (C15380)
+ * @author Jose Pablo Mora Cubillo (B75044)
  */
 public class Lista
 {
