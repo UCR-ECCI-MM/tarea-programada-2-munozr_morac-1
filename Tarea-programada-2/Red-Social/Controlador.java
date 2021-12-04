@@ -7,7 +7,7 @@ import javax.swing.JFileChooser;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
- * Esta clase representa la lista doblemente enlazada con los nodos que contienen a las personas.
+ * Esta clase se encarga de manejar la funcionalidad general del programa.
  *
  * @author Kyara Vannesa Muñoz Ramírez (C15380)
  * @author Jose Pablo Mora Cubillo (B75044)
