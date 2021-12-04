@@ -170,8 +170,6 @@ public class Lista
         }
         
         return eliminado;
-        
-        //Falta eliminar el árbol de amigos
     }
     
     /**
