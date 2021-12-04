@@ -19,40 +19,36 @@ public class Lista
     }
     
     /**
-     * Descripción
+     * Retorna el primer nodo de la lista.
      * 
-     * @param
-     * @return
+     * @return el primer nodo de la lista.
      */
     public NodoLista getPrimero() {
         return primero;
     }
     
     /**
-     * Descripción
+     * Sobreescribe la persona que se encuentra en el primer nodo.
      * 
-     * @param
-     * @return
+     * @param primero El primer nodo de la lista.
      */
     public void setPrimero(NodoLista primero) {
         this.primero = primero;
     }
     
     /**
-     * Descripción
+     * Retorna el útlimo nodo de la lista.
      * 
-     * @param
-     * @return
+     * @return el último nodo de la lista.
      */
     public NodoLista getUltimo() {
         return ultimo;
     }
     
     /**
-     * Descripción
+     * Sobreescribe la persona que se encuentra en en el último nodo.
      * 
-     * @param
-     * @return
+     * @param ultimo El último nodo de la lista.
      */
     public void setUltimo(NodoLista ultimo) {
         this.ultimo = ultimo;
@@ -189,6 +185,11 @@ public class Lista
         return hilera;
     }
     
+    /**
+     * toString de la clase Lista que se muestra en el archivo.
+     * 
+     * @return la hilera de la lista de personas.
+     */
     public String toStringArchivo() {
         NodoLista nodoAuxiliar = primero;
         String hilera = "";
